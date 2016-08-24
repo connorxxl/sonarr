@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC  && \
     echo "deb http://apt.sonarr.tv/ develop main" | tee -a /etc/apt/sources.list && \
     apt-get update && \
-    apt-get install -y nzbdrone mediainfo && \
+    apt-get install -y nzbdrone mediainfo libcurl3 && \
     apt-get -y autoremove && \
     apt-get -y clean
 
