@@ -18,7 +18,7 @@ RUN mkdir -p /config && \
 EXPOSE 8989
 
 VOLUME ["/config"]
-VOLUME ["/volumes/complete"]
+VOLUME ["/volumes/incoming"]
 VOLUME ["/volumes/tvseries"]
 
 WORKDIR /opt/NzbDrone
