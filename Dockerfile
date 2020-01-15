@@ -4,8 +4,8 @@ MAINTAINER connorxxl <christian.flaig@gmail.com>
 
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys FDA5DFFC  && \
-    echo "deb http://apt.sonarr.tv/ develop main" | tee -a /etc/apt/sources.list && \
+    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0xA236C58F409091A18ACA53CBEBFF6B99D9B78493 \
+    echo "deb http://apt.sonarr.tv/ master main" | tee /etc/apt/sources.list.d/sonarr.list \
     apt-get update && \
     apt-get install -y nzbdrone mediainfo libcurl3 && \
     apt-get -y autoremove && \
