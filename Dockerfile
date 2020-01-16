@@ -2,6 +2,8 @@ FROM ubuntu:bionic
 
 MAINTAINER connorxxl <christian.flaig@gmail.com>
 
+ARG DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0xA236C58F409091A18ACA53CBEBFF6B99D9B78493 && \
