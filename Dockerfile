@@ -13,6 +13,8 @@ RUN apt install -y gnupg ca-certificates && \
     echo "deb https://download.mono-project.com/repo/ubuntu stable-bionic main" | tee /etc/apt/sources.list.d/mono-official-stable.list && \
     apt update
 
+RUN apt install -y wget
+
 RUN wget https://mediaarea.net/repo/deb/repo-mediaarea_1.0-12_all.deb && \
     dpkg -i repo-mediaarea_1.0-12_all.deb && \
     apt-get update
