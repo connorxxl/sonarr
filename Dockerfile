@@ -8,8 +8,8 @@ ENV TZ=Europe/Zurich
 
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0xA236C58F409091A18ACA53CBEBFF6B99D9B78493 && \
-    echo "deb http://apt.sonarr.tv/ master main" | tee /etc/apt/sources.list.d/sonarr.list && \
+    apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 2009837CBFFD68F45BC180471F4F90DE2A9B4BF8 && \
+    echo "deb https://apt.sonarr.tv/ubuntu bionic main" | tee /etc/apt/sources.list.d/sonarr.list && \
     apt-get update && \
     apt-get install -y nzbdrone mediainfo libcurl3 tzdata && \
     apt-get -y autoremove && \
