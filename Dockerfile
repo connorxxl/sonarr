@@ -40,7 +40,7 @@ VOLUME ["/config"]
 VOLUME ["/volumes/complete"]
 VOLUME ["/volumes/tvseries"]
 
-WORKDIR /opt/NzbDrone
+WORKDIR /opt/Sonarr
 
-ENTRYPOINT ["mono", "/opt/NzbDrone/NzbDrone.exe"]
+ENTRYPOINT ["mono", "/opt/Sonarr/Sonarr.exe"]
 CMD [ "-nobrowser", "-data=/config" ]
