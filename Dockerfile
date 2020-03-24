@@ -40,7 +40,7 @@ VOLUME ["/config"]
 VOLUME ["/volumes/complete"]
 VOLUME ["/volumes/tvseries"]
 
-WORKDIR /usr/lib/sonarr/bin
+WORKDIR /var/lib/sonarr
 
 ENTRYPOINT ["mono", "/usr/lib/sonarr/bin/Sonarr.exe"]
 CMD [ "-nobrowser", "-data=/config" ]
